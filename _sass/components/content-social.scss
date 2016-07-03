@@ -1,0 +1,19 @@
+.content-social {
+  text-align: center;
+  margin: 70px 0;
+  & {
+    color: $color-font-regular;
+    font-size: 18px;
+  }
+  > .item {
+    display: inline-block;
+    margin-right: 30px;
+    cursor: pointer;
+  }
+  > .item:last-child {
+    margin-right: 0;
+  }
+  > .item:hover > .fa {
+    color: $color-font-bold;
+  }
+}

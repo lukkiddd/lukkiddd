@@ -1,0 +1,12 @@
+$color-primary: #5CD790;
+
+$color-font-regular: #8E9993;
+$color-font-bold: #2F3331;
+// $color-font-regular-head: darken($color-font-regular,10);
+$color-font-regular-head: $color-font-bold;
+
+$color-code-bold-bg: lighten($color-primary,37);
+$color-code-bold-shadow: lighten($color-primary,30);
+
+$color-code-border-bg: lighten($color-primary,34);
+$color-code-border-border: $color-primary;

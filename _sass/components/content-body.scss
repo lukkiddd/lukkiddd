@@ -1,0 +1,20 @@
+.content-body {
+  & {
+    margin-top: 100px;
+  }
+  a {
+    color: $color-font-regular;
+    text-decoration: none;
+    box-shadow: inset 0px -1px $color-font-bold;
+    cursor: pointer;
+  }
+  a:hover {
+    color: $color-font-bold;
+    box-shadow: inset 0px -2px $color-primary;;
+  }
+  > img {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 3px;
+  }
+}

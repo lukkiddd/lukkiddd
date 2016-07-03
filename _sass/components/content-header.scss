@@ -1,0 +1,39 @@
+.content-header {
+  & {
+
+  }
+  > .title {
+    font-family: $font-secondary-bold;
+    font-style: italic;
+    font-size: 36px;
+    text-align: center;
+    margin: 30px 0 20px 0;
+  }
+  > .subtitle {
+    font-family: $font-primary-regular;
+    color: $color-font-regular;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  > .subtitle > .author {
+    display: inline;
+  }
+  > .subtitle > .author:after {
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: $color-font-regular;
+    content: "";
+    vertical-align: 4px;
+    margin: 0 10px;
+  }
+  > .subtitle > .date {
+    display: inline;
+  }
+  > .subtitle:hover > .date {
+    color: $color-font-bold;
+    box-shadow: inset 0px -2px $color-primary;
+  }
+}
