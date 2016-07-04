@@ -9,7 +9,17 @@ $font-secondary-bold: 'Thaisans_neue_semibold', sans-seref;
 body {
   font-family: $font-primary-regular;
 }
-
+a {
+  text-decoration: none;
+}
+.highlighter-rouge {
+  font-family: 'Menlo', sans-serif;
+  font-size: 13px;
+  text-transform: lowercase;
+  background: $color-code-bold-bg;
+  padding: 3px 5px;
+  border-radius: 4px;
+}
 .text {
   & {
 

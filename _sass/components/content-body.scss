@@ -17,4 +17,20 @@
     margin: 10px 0;
     border-radius: 3px;
   }
+  p:first-child {
+    margin-bottom: 20px;
+  }
+  li {
+      margin: 15px 0px;
+  }
+  li:before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid $color-code-border-bg;
+    margin-right: 10px;
+  }
 }

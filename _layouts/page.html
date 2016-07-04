@@ -6,14 +6,14 @@ layout: default
   <div class="content-header">
     <div class="content-category -circle -{{page.categories}}"></div>
     <div class="title">{{ page.title }}</div>
-    <div class="subtitle">
+    <a href="{{site.url}}" class="subtitle">
       <div class="author">
         {{ site.author }}
       </div>
       <div class="date">
         {{ site.time | date_to_string }}
       </div>
-    </div>
+    </a>
   </div>
   <div class="content-body">
     {{ content }}
