@@ -1,27 +1,62 @@
 ---
 layout: default
 ---
-<!-- <article class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
-
-  <div class="post-content">
-    {{ content }}
-  </div>
-
-</article> -->
 <div class="content">
   <div class="content-header">
-    <div class="content-category -circle -css"></div>
-    <div class="title">บทความสำหรับ CSS</div>
+    <div class="content-category -circle -{{page.categories}}"></div>
+    <div class="title">{{ page.title }}</div>
     <div class="subtitle">
       <div class="author">
-        ลูกคิด
+        {{ site.author }}
       </div>
       <div class="date">
-        2 มกราคม 2559
+        {{ site.time | date_to_string }}
       </div>
     </div>
   </div>
+  <div class="content-body">
+    {{ content }}
+    <div class="content-social">
+      <div class="item"><i class="fa fa-facebook"></i></div>
+      <div class="item"><i class="fa fa-behance"></i></div>
+      <div class="item"><i class="fa fa-github"></i></div>
+    </div>
+  </div>
+</div>
+{% if page.next %}
+  <div class="content-next">
+    <div class="next-article">
+      <div class="fa fa-eye"></div><span>บทความถัดไป:</span>
+    </div>
+    <div class="title">
+      {{ page.next.title }}
+    </div>
+    <div class="subtitle">
+      {{ page.next.excerpt }}
+    </div>
+    <a href="{{ page.next.url }}" class="read">
+      อ่านต่อ... <div class="fa fa-angle-right"></div>
+    </a>
+  </div>
+  {% endif %}
+  <div class="content -footer">
+    <div class="content-list">
+      <div class="title">บทความก่อนหน้า:</div>
+      <div class="item-list">
+        {% for a in site.posts %}
+        <a class="item" href="#">
+          <span class="date">{{a.date | date_to_string}}</span>
+          <span class="article-title">
+            {{a.title}}
+          </span>
+          <span class="article-cate text -menlo">
+            {{ a.categories }}
+          </span>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</body>
+</html>

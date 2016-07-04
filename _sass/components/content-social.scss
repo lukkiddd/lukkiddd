@@ -9,6 +9,16 @@
     display: inline-block;
     margin-right: 30px;
     cursor: pointer;
+    box-shadow: none;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    width: 30px;
+    height: 24px;
+    padding-top: 6px;
+  }
+  > .item:hover {
+    box-shadow: none;
+    border-color: $color-font-bold;
   }
   > .item:last-child {
     margin-right: 0;

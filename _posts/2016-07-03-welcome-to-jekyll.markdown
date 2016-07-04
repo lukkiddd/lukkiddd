@@ -1,14 +1,17 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2016-07-03 01:19:48 +0700
-categories: css
+title:  "Scala First Time"
+date:   2016-07-04 09:35:00 +0700
+categories: dev
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+ภาษา Scala ย่อมาจาก Scalable Language
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+นั่นแปลว่ามันถูกสร้างขึ้นมาให้รองรับการทำงานกับระบบขนาดใหญ่ มันทำให้รู้สึกเหมือนเป็น Script Language ในบางครั้งเวลาที่ต้องการ Feedback แบบเร็วๆ และก็ให้ความรู้สึกเหมือนเป็นภาษาที่จริงจังเมื่อเราต้องการสร้างระบบที่ทรงพลัง
 
-Jekyll also offers powerful support for code snippets:
+Scala เป็น Object-Oriented และ Functional ในขณะเดียวกัน ทำให้คนที่มีพื้นฐาน Java ที่ไม่ใช่เรา สามารถเรียนรู้มันได้อย่างง่ายได้ และวันนี้ ผมจำเป็นต้องเรียนรู้ Scala เพื่อทำ Project สำหรับตอนฝึกงาน ดังนั้น เรามาเรียนรู้ไปพร้อม ๆ กันดีกว่าครับ
+
+# ก่อนจะเริ่ม #
+ก่อนที่เราจะเริ่ม ศึกษา
 
 {% highlight html %}
 <html>
