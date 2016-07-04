@@ -9,7 +9,9 @@
     margin-left: auto;
     margin-right: auto;
     box-shadow: -5px 5px rgba(20,204,172,.53),5px -5px rgba(255,204,25,.69),4px -5px rgba(155,89,182,0.4),3px 5px rgba(155,90,182,0.3);
-
+    animation-name: flip;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
     // box-shadow: -3px 3px rgba(255,46,25,.53),3px -3px rgba(173,204,20,.69),2px -3px rgba(97,134,178,0.2),1px 3px rgba(46,204,113,0.3);
   }
   &.-circle {
@@ -27,9 +29,6 @@
     // background: #9B59B6;
     background: #BB4D4D;
     box-shadow: -5px 5px rgba(20,204,172,.53),5px -5px rgba(255,204,25,.69),4px -5px rgba(155,89,182,0.4),3px 5px rgba(155,90,182,0.3);
-    animation-name: flip;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
   }
   &.-css:after {
     content:"CSS";

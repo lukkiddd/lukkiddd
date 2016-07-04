@@ -2314,7 +2314,10 @@ table {
   background: #6186B2;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: -5px 5px rgba(20, 204, 172, 0.53), 5px -5px rgba(255, 204, 25, 0.69), 4px -5px rgba(155, 89, 182, 0.4), 3px 5px rgba(155, 90, 182, 0.3); }
+  box-shadow: -5px 5px rgba(20, 204, 172, 0.53), 5px -5px rgba(255, 204, 25, 0.69), 4px -5px rgba(155, 89, 182, 0.4), 3px 5px rgba(155, 90, 182, 0.3);
+  animation-name: flip;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; }
 .content-category.-circle {
   border-radius: 50%; }
 .content-category:after {
@@ -2326,10 +2329,7 @@ table {
   font-size: 14px; }
 .content-category.-css {
   background: #BB4D4D;
-  box-shadow: -5px 5px rgba(20, 204, 172, 0.53), 5px -5px rgba(255, 204, 25, 0.69), 4px -5px rgba(155, 89, 182, 0.4), 3px 5px rgba(155, 90, 182, 0.3);
-  animation-name: flip;
-  animation-duration: 2s;
-  animation-iteration-count: infinite; }
+  box-shadow: -5px 5px rgba(20, 204, 172, 0.53), 5px -5px rgba(255, 204, 25, 0.69), 4px -5px rgba(155, 89, 182, 0.4), 3px 5px rgba(155, 90, 182, 0.3); }
 .content-category.-css:after {
   content: "CSS"; }
 .content-category.-dev:after {
