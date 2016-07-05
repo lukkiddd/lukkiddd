@@ -2234,8 +2234,7 @@ p {
   font-family: "cs_prajadregular", sans-seref;
   color: #8E9993;
   line-height: 35px;
-  font-size: 1.1em;
-  word-break: keep-all; }
+  font-size: 1.1em; }
 
 @media screen and (max-width: 600px) {
   h1 {
@@ -2592,8 +2591,7 @@ table {
   color: #8E9993;
   width: 70%;
   max-width: 420px;
-  line-height: 1.5;
-  word-break: keep-all; }
+  line-height: 1.5; }
 .footer > p.text > .-bold {
   color: #2F3331; }
 
