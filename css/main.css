@@ -2258,7 +2258,7 @@ table {
   text-align: center;
   font-family: 'cs_prajad', sans-serif;
   font-size: 1em;
-  width: 90%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   line-height: 2;
@@ -2460,7 +2460,8 @@ table {
   position: relative;
   text-align: center;
   padding: 137px 0;
-  color: #ffffff; }
+  color: #ffffff;
+  min-height: 220px; }
 .content-next:after {
   height: 500px;
   content: "";
@@ -2517,6 +2518,22 @@ table {
 .content-next > .read:hover {
   background: #5CD790; }
 
+@media screen and (max-width: 768px) {
+  .content-next > .title {
+    font-size: 30px; } }
+@media screen and (max-width: 540px) {
+  .content-next {
+    background-image: none; }
+    .content-next:after {
+      background: #1B1C59;
+      /* Old browsers */
+      background: -moz-linear-gradient(top, #2d2e94 0%, #1B1C59 100%, #161749 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, #2d2e94 0%, #1B1C59 100%, #161749 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #2d2e94 0%, #1B1C59 100%, #161749 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='lighten(#1B1C59,15)', endColorstr='darken(#1B1C59,4)',GradientType=0 ); } }
 .content-list > .title {
   letter-spacing: 3.5px;
   font-family: "Thaisans_neue_semibold", sans-seref;
@@ -2543,21 +2560,30 @@ table {
   color: #5CD790; }
 .content-list > .item-list > .item > span:first-child {
   width: 25%;
-  display: inline-block; }
+  display: inline-block;
+  vertical-align: middle; }
 .content-list > .item-list > .item > span {
   width: 55%;
-  display: inline-block; }
+  display: inline-block;
+  vertical-align: middle; }
 .content-list > .item-list > .item > span:last-child {
   width: 18%;
   display: inline-block;
-  text-align: right; }
+  text-align: right;
+  vertical-align: middle; }
 .content-list > .item-list > .item > .date,
 .content-list > .item-list > .item > .article-cate {
   font-size: 12px; }
 
+@media screen and (max-width: 550px) {
+  .content-list > .item-list > .item > span {
+    width: 50%;
+    font-size: 14px; }
+  .content-list > .item-list > .item > span:last-child {
+    width: 17%; } }
 .footer {
   margin-top: 50px;
-  width: 90%;
+  width: 80%;
   border-top: 1px solid #dee2e0;
   padding: 40px 20px;
   margin-left: auto;
@@ -2570,5 +2596,10 @@ table {
   word-break: keep-all; }
 .footer > p.text > .-bold {
   color: #2F3331; }
+
+@media screen and (max-width: 425px) {
+  .footer > p.text {
+    width: 100%;
+    text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */

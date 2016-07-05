@@ -32,18 +32,33 @@
   > .item-list > .item > span:first-child {
     width: 25%;
     display: inline-block;
+    vertical-align: middle;
   }
   > .item-list > .item > span {
     width: 55%;
     display: inline-block;
+    vertical-align: middle;
   }
   > .item-list > .item > span:last-child {
     width: 18%;
     display: inline-block;
     text-align: right;
+    vertical-align: middle
   }
   > .item-list > .item > .date,
   > .item-list > .item > .article-cate {
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .content-list {
+    > .item-list > .item > span {
+      width: 50%;
+      font-size: 14px;
+    }
+    > .item-list > .item > span:last-child {
+      width: 17%;
+    }
   }
 }

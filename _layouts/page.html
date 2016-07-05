@@ -33,7 +33,7 @@ layout: default
       {{ page.next.title }}
     </div>
     <div class="subtitle">
-      {{ page.next.excerpt }}
+      {{ page.next.excerpt | strip_html | truncatewords:25 }}
     </div>
     <a href="{{ page.next.url }}" class="read">
       อ่านต่อ... <div class="fa fa-angle-right"></div>
