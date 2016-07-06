@@ -2345,8 +2345,26 @@ table {
   content: "CSS"; }
 .content-category.-dev:after {
   content: "Dev"; }
+.content-category.-tool {
+  background: #16a085; }
+.content-category.-tool:after {
+  content: "Tool"; }
 
 @keyframes flip {
+  0% {
+    box-shadow: -4px 4px rgba(20, 204, 172, 0.53), 4px -4px rgba(255, 204, 25, 0.69), 3px -4px rgba(155, 89, 182, 0.4), 2px 4px rgba(155, 90, 182, 0.3); }
+  50% {
+    box-shadow: 4px -4px rgba(20, 204, 172, 0.53), -4px 4px rgba(255, 204, 25, 0.69), -4px 3px rgba(155, 89, 182, 0.4), -2px -4px rgba(155, 90, 182, 0.3); }
+  100% {
+    box-shadow: -4px 4px rgba(20, 204, 172, 0.53), 4px -4px rgba(255, 204, 25, 0.69), 3px -4px rgba(155, 89, 182, 0.4), 2px 4px rgba(155, 90, 182, 0.3); } }
+@-webkit-keyframes flip {
+  0% {
+    box-shadow: -4px 4px rgba(20, 204, 172, 0.53), 4px -4px rgba(255, 204, 25, 0.69), 3px -4px rgba(155, 89, 182, 0.4), 2px 4px rgba(155, 90, 182, 0.3); }
+  50% {
+    box-shadow: 4px -4px rgba(20, 204, 172, 0.53), -4px 4px rgba(255, 204, 25, 0.69), -4px 3px rgba(155, 89, 182, 0.4), -2px -4px rgba(155, 90, 182, 0.3); }
+  100% {
+    box-shadow: -4px 4px rgba(20, 204, 172, 0.53), 4px -4px rgba(255, 204, 25, 0.69), 3px -4px rgba(155, 89, 182, 0.4), 2px 4px rgba(155, 90, 182, 0.3); } }
+@-o-keyframes flip {
   0% {
     box-shadow: -4px 4px rgba(20, 204, 172, 0.53), 4px -4px rgba(255, 204, 25, 0.69), 3px -4px rgba(155, 89, 182, 0.4), 2px 4px rgba(155, 90, 182, 0.3); }
   50% {
