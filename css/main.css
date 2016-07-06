@@ -2381,7 +2381,7 @@ table {
 .content-body a:hover {
   color: #2F3331;
   box-shadow: inset 0px -2px #5CD790; }
-.content-body > img {
+.content-body img {
   width: 100%;
   margin: 10px 0;
   border-radius: 3px; }
