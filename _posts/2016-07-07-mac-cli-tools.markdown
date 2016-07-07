@@ -1,9 +1,11 @@
 ---
 layout: post
 title:  "Mac CLI ความเท่ที่คุณคู่ควร"
-date:   2016-07-07 16:52:00 +0700
+date:   2016-07-07 20:52:00 +0700
 categories: tool
 ---
+Mac CLI Tools คือหนึ่งในเครื่องมือที่เสริมความเทห์ให้กับเหล่า Developer ทั้งหลาย
+
 ![MAC CLI](https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/demo/demo.gif)
 
 # Developer สายแข็ง

@@ -8,6 +8,7 @@ categories: tool
 
 ## App ##
 จากที่ลองนั่งไล่ดูนะครับมี App ที่น่าสนใจเลยตัวเลยครับ
+
 * Typist - App ที่ทำให้มีเอฟเฟคข้อความแบบ กำลังพิมพ์
 + Smart Underline - ทำให้ underline อ่อน ๆ กลายเป็น underline ที่โดดเด่น
 + Animate - เพิ่ม animate effect ให้กับเว็บไซต์

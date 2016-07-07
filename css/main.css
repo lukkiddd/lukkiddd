@@ -2388,7 +2388,8 @@ table {
 .content-body p:first-child {
   margin-bottom: 20px; }
 .content-body li {
-  margin: 15px 0px; }
+  margin: 15px 0px;
+  color: #8E9993; }
 .content-body li:before {
   content: "";
   display: inline-block;
