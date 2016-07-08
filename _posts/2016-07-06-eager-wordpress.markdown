@@ -20,7 +20,7 @@ categories: tool
 
 ลองไปเล่นตัว [DEMO](https://eager.io/example-site) กันดูก่อนได้ครับ มีหลาย App ให้ลองเลย
 
-ใครสนใจหรือชอบ อยากจะแบ่งปันเพิ่มเติม เข้ามาคุยกันได้ที่ [Lukkiddd](http://www.facebook.com/lukkiddesign) ขอบคุณครับ
+ใครสนใจหรือชอบ อยากจะแบ่งปันเพิ่มเติม เข้ามาคุยกันได้ที่ [Lukkiddd](http://www.facebook.com/lukkiddd) ขอบคุณครับ
 
 อ้างอิง:
 

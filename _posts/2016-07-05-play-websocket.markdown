@@ -116,7 +116,7 @@ GET  /random  controller.Application.wsRand
 
 เรียบร้อยแล้ว รันได้เลยยย
 
-ใครสนใจหรือชอบ อยากจะแบ่งปันเพิ่มเติม เข้ามาคุยกันได้ที่ [Lukkiddd](http://www.facebook.com/lukkiddesign) ขอบคุณครับ
+ใครสนใจหรือชอบ อยากจะแบ่งปันเพิ่มเติม เข้ามาคุยกันได้ที่ [Lukkiddd](http://www.facebook.com/lukkiddd) ขอบคุณครับ
 
 อ้างอิง:
 

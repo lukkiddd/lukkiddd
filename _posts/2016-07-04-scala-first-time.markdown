@@ -49,3 +49,5 @@ object Classes {
 (1, 2)
 (11, 12)
 {% endhighlight %}
+
+ใครสนใจหรือชอบ อยากจะแบ่งปันเพิ่มเติม เข้ามาคุยกันได้ที่ [Lukkiddd](http://www.facebook.com/lukkiddd) ขอบคุณครับ
