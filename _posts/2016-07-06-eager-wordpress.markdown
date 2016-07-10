@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "EAGER โคตรแอพ for WordPress"
+title:  "EAGER โคตรแอพ WordPress"
 date:   2016-07-06 16:38:00 +0700
 categories: tool
 ---
