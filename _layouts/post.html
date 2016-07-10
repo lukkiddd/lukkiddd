@@ -3,18 +3,18 @@ layout: default
 ---
 
 <div class="content">
-  <div class="content-header">
+  <header class="content-header">
     <div class="content-category -circle -{{page.categories}}"></div>
-    <div class="title">{{ page.title }}</div>
+    <h1 class="title">{{ page.title }}</h1>
     <a href="{{site.url}}" class="subtitle">
       <div class="author">
         {{ site.author }}
       </div>
-      <div class="date">
+      <time dateTime="{{ site.time}}" class="date">
         {{ site.time | date_to_string }}
-      </div>
+      </time>
     </a>
-  </div>
+  </header>
   <div class="content-body">
     {{ content }}
     <div class="content-social">
