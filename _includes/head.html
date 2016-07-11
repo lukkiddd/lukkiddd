@@ -10,7 +10,7 @@
   {% if page.image != null %}
   <meta property="og:image" content="{{ page.image }}">
   {% else %}
-  <meta property="og:image" content="{{ '/images/lk.png' | prepend: site.baseurl  }}">
+  <meta property="og:image" content="{{ '/images/lk.png' | prepend: site.baseurl | prepend: site.url  }}">
   {% endif %}
   <meta property="fb:pages" content="1408139806138494" />
   <meta property="fb:article_style" content="default">
