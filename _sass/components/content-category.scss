@@ -35,11 +35,14 @@
   &.-dev:after {
     content: "Dev"
   }
+  &.-data:afte {
+    content: "Data";
+  }
   &.-tool {
     background: #16a085;
   }
   &.-tool:after {
-    content: "Tool"
+    content: "Tool";
   }
 }
 

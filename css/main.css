@@ -2345,6 +2345,8 @@ table {
   content: "CSS"; }
 .content-category.-dev:after {
   content: "Dev"; }
+.content-category.-data:afte {
+  content: "Data"; }
 .content-category.-tool {
   background: #16a085; }
 .content-category.-tool:after {
