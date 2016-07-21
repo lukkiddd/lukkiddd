@@ -31,7 +31,8 @@
   .c     { color: $color-font-regular; font-style: italic } // Comment
   // .err   { color: #a61717; background-color: #e3d2d2 } // Error
   // .k     { font-weight: bold } // Keyword
-  // .o     { font-weight: bold } // Operator
+  .kn    { color: #22aa99; }
+  .o     { font-weight: bold } // Operator
   .cm    { color: $color-font-regular; font-style: italic } // Comment.Multiline
   .cp    { color: $color-font-regular; font-weight: bold } // Comment.Preproc
   .c1    { color: $color-font-regular; font-style: italic } // Comment.Single
@@ -62,7 +63,7 @@
   // .ni    { color: #800080 } // Name.Entity
   // .ne    { color: #900; font-weight: bold } // Name.Exception
   // .nf    { color: #900; font-weight: bold } // Name.Function
-  // .nn    { color: #555 } // Name.Namespace
+  .nn    { color: #555 } // Name.Namespace
   // .nt    { color: #000080 } // Name.Tag
   // .nv    { color: #008080 } // Name.Variable
   // .ow    { font-weight: bold } // Operator.Word

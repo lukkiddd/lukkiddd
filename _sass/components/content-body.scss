@@ -20,9 +20,13 @@
   p:first-child {
     margin-bottom: 20px;
   }
+  ul ul {
+    padding-left: 20px;
+  }
   li {
       margin: 15px 0px;
       color: $color-font-regular;
+      line-height: 1.5;
   }
   li:before {
     content: "";

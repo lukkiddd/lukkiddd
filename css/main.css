@@ -2345,7 +2345,7 @@ table {
   content: "CSS"; }
 .content-category.-dev:after {
   content: "Dev"; }
-.content-category.-data:afte {
+.content-category.-data:after {
   content: "Data"; }
 .content-category.-tool {
   background: #16a085; }
@@ -2389,9 +2389,12 @@ table {
   border-radius: 3px; }
 .content-body p:first-child {
   margin-bottom: 20px; }
+.content-body ul ul {
+  padding-left: 20px; }
 .content-body li {
   margin: 15px 0px;
-  color: #8E9993; }
+  color: #8E9993;
+  line-height: 1.5; }
 .content-body li:before {
   content: "";
   display: inline-block;
@@ -2429,6 +2432,10 @@ table {
 .highlight .c {
   color: #8E9993;
   font-style: italic; }
+.highlight .kn {
+  color: #22aa99; }
+.highlight .o {
+  font-weight: bold; }
 .highlight .cm {
   color: #8E9993;
   font-style: italic; }
@@ -2440,6 +2447,8 @@ table {
   font-style: italic; }
 .highlight .s {
   color: #5CD790; }
+.highlight .nn {
+  color: #555; }
 .highlight .s1 {
   color: #5CD790; }
 

@@ -15,10 +15,11 @@ Heterogeneous Storage คือความสามารถในการแ�
 # Configuration
 
 ตั้งค่าที่ `hdfs-site.xml`
+
 * `dfs.storage.policy.enabled` ตั้งค่าเป็น true (default - true)
 * `dfs.datanode.data.dir` ให้ติด Tag ไว้ด้านหน้าว่าเป็นประเภทอะไร
-  + `[ARCHIVE]/datanode/data1,[SSD]/datanode/data2`
-  + มี Tag ดังนี้
+  * `[ARCHIVE]/datanode/data1,[SSD]/datanode/data2`
+  * มี Tag ดังนี้
     + ARCHIVE
     + SSD
     + DISK (default)
@@ -30,14 +31,15 @@ Heterogeneous Storage คือความสามารถในการแ�
 ## StoragePreferences
 
 ตัว Storage Preference อ้างอิงจาก เอกสาร doc ปี 2014   
-1. ตั้งค่าตอนสร้างไฟล์ด้วย `FileSystem#create`
-2. ตั้งค่าไฟล์ที่มีอยู่แล้วด้วย `DistributedFileSystem#setStoragePreference`
-3. คิวรี่ Storage Preference ด้วย `DistributedFileSystem#getStoragePreference`
-4. ดู BlockLocation ดูว่า Block นี้อยู่ tag ไหน ด้วย `FileSystem#getFileBlockLocations`
-5. CLI for Storage types
-  1. `hdfs dfs -put -storagePref [storagePreferenceString] <localsrc> … <dst>`
-  2. `hdfs dfs -cp -storagePref [storagePreferenceString] <localsrc> … <dst>`
-  3. `hdfs dos setStoragePreference [storagePreferenceString] <file1> … <fileN>`
+
+1.  ตั้งค่าตอนสร้างไฟล์ด้วย `FileSystem#create`
+2.  ตั้งค่าไฟล์ที่มีอยู่แล้วด้วย `DistributedFileSystem#setStoragePreference`
+3.  คิวรี่ Storage Preference ด้วย `DistributedFileSystem#getStoragePreference`
+4.  ดู BlockLocation ดูว่า Block นี้อยู่ tag ไหน ด้วย `FileSystem#getFileBlockLocations`
+5.  CLI for Storage types
+  1.  `hdfs dfs -put -storagePref [storagePreferenceString] <localsrc> … <dst>`
+  2.  `hdfs dfs -cp -storagePref [storagePreferenceString] <localsrc> … <dst>`
+  3.  `hdfs dos setStoragePreference [storagePreferenceString] <file1> … <fileN>`
 
 หมายเหตุ: คำสั่งนี้ ใน Apache Hadoop Doc ปัจจุบัน + CDH5.7.0 ไม่สามาถใช้งานได้ (Unknown command) จาก Apache Hadoop Doc ถูกเปลี่ยนเป็น `storagepolicy`
 
@@ -52,9 +54,9 @@ Lazy_Persist - เขียนลง RAM_DISK แล้วค่อยๆถู�
 
 ### Command
 
-1. `hdfs storagepolicies -listPolicies` - เอาไว้ดูรายละเอียด Policies ทั้งหมด
-2. `hdfs storagepolicies -setStoragePolicy -path <path> -policy <policy>` - เอาไว้เซ็ท Policy ให้กับ path ที่ต้องการ
-3. `hdfs storagepolicies -getStoragePolicy -path <path>` - เอาไว้ดูค่า Policy ที่เคยเซ็ทไว้ของ path ที่ต้องการ
+1.  `hdfs storagepolicies -listPolicies` - เอาไว้ดูรายละเอียด Policies ทั้งหมด
+2.  `hdfs storagepolicies -setStoragePolicy -path <path> -policy <policy>` - เอาไว้เซ็ท Policy ให้กับ path ที่ต้องการ
+3.  `hdfs storagepolicies -getStoragePolicy -path <path>` - เอาไว้ดูค่า Policy ที่เคยเซ็ทไว้ของ path ที่ต้องการ
 
 ## Maintaining
 
@@ -64,16 +66,18 @@ Mover จะทำการ scan ไฟล์บน HDFS แล้วดูว�
 {% highlight shell %}
 hdfs mover [-p <files/dirs> | -f <local file name>]
 {% endhighlight %}
+
 ## Quota Management APIs
 
 มันสามารถ Set quotas ของ แต่ละ storageType ได้ด้วยครับ ว่า storageType นี้ใช้ resource เท่าไหร่ ด้วย   
-1. `DistributedFileSystems APIs`
-  1. `DistributedFileSystem#setStorageTypeSpaceQuotas`
-  2. `DistributedFileSystem#setQuota`
-2. `HdfsAdmin APIs`
-  1. `HdfsAdmin#setStorageTypeSpaceQuota`
-  2. `HdfsAdmin#clearStorageTypeSpaceQuotas`
-3. `CLI`
+
+* `DistributedFileSystems APIs`
+  * `DistributedFileSystem#setStorageTypeSpaceQuotas`
+  + `DistributedFileSystem#setQuota`
++ `HdfsAdmin APIs`
+  * `HdfsAdmin#setStorageTypeSpaceQuota`
+  + `HdfsAdmin#clearStorageTypeSpaceQuotas`
++ `CLI`
 
 ### Set
 
@@ -88,6 +92,7 @@ hdfs dfsadmin ­-clrStorageTypeSpaceQuota ­types storageType1,storageType2,... 
 {% endhighlight %}
 
 ### Query กับดู Usage
+
 {% highlight shell %}
 hdfs dos -count -q <path>
 {% endhighlight %}
