@@ -38,6 +38,12 @@
   &.-data:after {
     content: "Data";
   }
+  &.-ux {
+    background: #e74c3c;
+  }
+  &.-ux:after {
+    content: "UX";
+  }
   &.-tool {
     background: #16a085;
   }

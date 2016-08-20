@@ -4,8 +4,6 @@ title:  "Heterogeneous Storage in HDFS"
 date:   2016-07-12 14:58:00 +0700
 categories: data
 ---
-## Heterogeneous Storage
-
 Heterogeneous Storage คือความสามารถในการแยกประเภทหรือความแตกต่างของ Storage ในระบบได้ โดยแต่ก่อน Hadoop HDFS ไม่สามารถแยกประเภทของ Storage ได้แต่จะมองรวมกันเป็นก้อนเดียว แต่ด้วยความต้องการความเร็วทำให้คนเริ่มหันมาใช้ SSD เพื่อเก็บข้อมูลมากขึ้น รวมถึงราคาของ SSD ค่อย ๆ ถูกลงเรื่อย ๆ
 เมื่อมีการนำ SSD มาใช้ทำ Storage แต่ยังมีการใช้ DISK(HDD) อยู่ด้วย แล้ว Hadoop ก็มองมันเป็น Storage ก้อนเดียว จึงทำให้มันดูไม่ค่อยเวิร์คเท่าไหร่ จึงมี Feature ใหม่ (Heterogeneous storage) เกิดขึ้น
 
@@ -69,15 +67,7 @@ hdfs mover [-p <files/dirs> | -f <local file name>]
 
 ## Quota Management APIs
 
-มันสามารถ Set quotas ของ แต่ละ storageType ได้ด้วยครับ ว่า storageType นี้ใช้ resource เท่าไหร่ ด้วย   
-
-* `DistributedFileSystems APIs`
-  * `DistributedFileSystem#setStorageTypeSpaceQuotas`
-  + `DistributedFileSystem#setQuota`
-+ `HdfsAdmin APIs`
-  * `HdfsAdmin#setStorageTypeSpaceQuota`
-  + `HdfsAdmin#clearStorageTypeSpaceQuotas`
-+ `CLI`
+มันสามารถ Set quotas ของ แต่ละ storageType ได้ด้วยครับ ว่า storageType นี้ใช้ resource เท่าไหร่
 
 ### Set
 

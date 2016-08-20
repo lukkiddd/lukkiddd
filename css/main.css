@@ -2347,6 +2347,10 @@ table {
   content: "Dev"; }
 .content-category.-data:after {
   content: "Data"; }
+.content-category.-ux {
+  background: #e74c3c; }
+.content-category.-ux:after {
+  content: "UX"; }
 .content-category.-tool {
   background: #16a085; }
 .content-category.-tool:after {
