@@ -1,13 +1,12 @@
 ---
 layout: post
 title:  "วิธีเข้า Server Parallel"
-date:   2016-08-19 16:34:00 +0700
+date:   2016-08-21 16:34:00 +0700
 categories: tool
 ---
 
 # Windows
 
-## Preparation
 1. [Download PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
 ![putty](http://i.giphy.com/l0HlUpSQn024AUgy4.gif)
 
@@ -34,5 +33,21 @@ categories: tool
 ![01](http://i.giphy.com/l0MYDs6qRLeYcgzjq.gif)
 ![02](http://i.giphy.com/l0MYFHFk4trh8sPyU.gif)
 
+### Notes:
+สำหรับไฟล์ `.cpp` ให้ใช้คำสั่ง `mpic++` แทน `mpicc` นะครับ
+
 # Linux
-`Coming soon`
+1. ไปที่ Directory ที่เก็บไฟล์ไว้ แล้วทำการ `scp`  ไฟล์ขึ้นไป
+![mac01](http://i.giphy.com/3o7TKTnpWWudsZnU1a.gif)
+
+2. เปิด Terminal ขึ้นมาแล้วทำการ `ssh` เข้าไปที่ `Host` ครับ
+![mac02](http://i.giphy.com/26ufoughbfjmwDz4Q.gif)
+
+3. ที่เหลือ รันเหมือน Windows เลยครับ
+
+### Compile
+- C: `mpicc -o a a.c`
+- CPP: `mpic++ -o a a.c`
+
+### Execute
+`mpiexec -n 5 a`
